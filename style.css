@@ -1,0 +1,94 @@
+body,
+html {
+	height: 100%;
+	display: grid;
+	background-color: rgb(20, 20, 20);
+}
+
+p {
+	margin: auto;
+	font-family: "Modak", cursive;
+	font-size: 14rem;
+}
+
+.wrapper {
+    background-color: black;
+    min-width: 80%;
+    margin: auto;
+    padding: 0.2em;
+    border: 8px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to left, #00e6e6, #e40bb5f2);
+}
+
+.word {
+	display: flex;
+}
+
+.word.lets {
+    margin-bottom: -8rem;
+}
+
+p.pink {
+    background: conic-gradient(#00e6e6, #e40bb5f2 25%, black 80%, #eb4cee);
+    background-size: 300% 18%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-pink 10s cubic-bezier(0.4, 0, 1, 1) infinite;
+}
+
+@keyframes gradient-pink {
+	0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+
+p.yellow {
+    background: radial-gradient(closest-side, #f2f235 40%, #ee632eb0 50%, black 10%);
+    background-size: 13% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-yellow 8s cubic-bezier(0.50, 0.50, 0.50, 0.50) infinite;
+}
+
+@keyframes gradient-yellow {
+    0%{background-position:10% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:100% 0%}
+}
+
+p.white {
+	background: radial-gradient(circle at 100%, #333, #333 50%, #fff 55%, #000 50%);
+    background-size: 400% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-white 20s cubic-bezier(1, 1, 1, 1) infinite;
+}
+
+@keyframes gradient-white {
+    0%{background-position:10% 0%}
+    100%{background-position:800% 5%}
+	0%{background-position:0% 8%}
+}
+
+p.apos {
+		background: linear-gradient(to bottom, #fff 25%, #bc7012 25%,#efd002 40%);
+		background-color: #f7a900;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+}
+
+p.blue {
+    background: radial-gradient(farthest-side, rgb(15, 172, 184), rgb(38, 18, 221) 50%, #88e2d670 55%, #040505 75%);
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-blue 10s ease-in-out infinite;
+}
+
+@keyframes gradient-blue {
+    0%{background-position:0% 100%}
+    100%{background-position:800% 5%}
+	0%{background-position:50% 100%}
+}
